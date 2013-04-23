@@ -7,8 +7,21 @@
   <meta name="author" content="Christian Muise">
   <link rel="stylesheet" href="assets/css/screen.css?v=1.0">
   <link rel="stylesheet" href="assets/css/wardly.css?v=1.0">
+  
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="assets/js/wardly.js"></script>
+  
+  <script type="text/javascript">
+      function initialize() {
+		  insert_custom_map([{'wards': [21,22],
+		                      'class': 'st-paul-ward',
+		                      'color': 'red'}],
+		                     '#st-pauls', 'grey');
+	  }
+  </script>
+
 </head>
-<body>
+<body onload="initialize()">
 	<h1>Plain</h1>
 	<ul class="wardly" id="plain"> 
 	    <li>a</li>
@@ -103,5 +116,9 @@
 	    <li>Q</li>
 	    <li>R</li>
 	</ul>
+	<h1>St. Paul's</h1>
+	<ul class="wardly" id="st-pauls"> 
+	</ul>
+	
 </body>
 </html>
