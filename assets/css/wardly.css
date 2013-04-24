@@ -11,7 +11,7 @@
 }
 
 .wardly {
-  font: normal normal 600px/100% "wardly-to-webfont";
+  font: normal normal 600px/103% "wardly-to-webfont";
   font-size-adjust: none;
   -webkit-text-rendering: optimizeLegibility;
   -moz-text-rendering: optimizeLegibility;
@@ -33,7 +33,7 @@
   float: left;
   margin: 0 0 0 -100%;
   position: relative;
-  left: 101%;
+  left: 103%;
   width: 100%;
   cursor: default;
   -webkit-transition: all 1s ease-in;
@@ -53,6 +53,9 @@
   padding: 20px;
   border-radius: 10px;
   border-top: 1px solid #dddddd;
+  height: 300px;
+  width: 600px;     /* width should be 2x the height */
+  font-size: 1200px; /* font-size should be 2x the widht */
 }
 
 #york {
