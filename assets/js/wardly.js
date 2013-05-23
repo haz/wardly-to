@@ -45,17 +45,18 @@ var ward_mapping = {1: 'a',
                     41: 'O',
                     42: 'P',
                     43: 'Q',
-                    44: 'R'}
+                    44: 'R'};
 
 function insert_custom_map(wards, element, default_color) {
 	
 	var map = '';
+    var group, index, ward;
 	
 	if (default_color) {
-		var defined = {}
+		var defined = {};
 		for (group in wards) {
-			for (index in wards[group]['wards']) {
-				defined[wards[group]['wards'][index]] = true;
+			for (index in wards[group].wards) {
+				defined[wards[group].wards[index]] = true;
 			}
 		}
 		for (var i=1; i<=44; ++i) {
@@ -64,8 +65,8 @@ function insert_custom_map(wards, element, default_color) {
 	}
 	
 	for (group in wards) {
-		for (index in wards[group]['wards']) {
-			ward = wards[group]['wards'][index];
+		for (index in wards[group].wards) {
+			ward = wards[group].wards[index];
 			map += '<li class="' + wards[group]['class'] + '">' + ward_mapping[ward] + '</li>';
 		}
 	}
@@ -73,7 +74,7 @@ function insert_custom_map(wards, element, default_color) {
 	$(element).html(map);
 	
 	for (group in wards) {
-		$('.' + wards[group]['class']).css('color', wards[group]['color']);
+		$('.' + wards[group].class).css('color', wards[group].color);
 	}
 	
 	if (default_color) {
