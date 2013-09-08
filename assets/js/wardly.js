@@ -49,17 +49,24 @@ var ward_mapping = {1: 'a',
 
 function insert_custom_map(wards, element, default_color) {
 	
+	default_color = typeof default_color !== 'undefined' ? default_color : "black";
+	
 	var map = '';
     var group, index, ward;
+	var defined = {};
 	
-	if (default_color) {
-		var defined = {};
-		for (group in wards) {
-			for (index in wards[group].wards) {
-				defined[wards[group].wards[index]] = true;
-			}
+	for (var i=1; i<=44; ++i) {
+		defined[i] = false;
+	}
+	
+	for (group in wards) {
+		for (index in wards[group].wards) {
+			defined[wards[group].wards[index]] = true;
 		}
-		for (var i=1; i<=44; ++i) {
+	}
+	
+	for (var i=1; i<=44; ++i) {
+		if (!defined[i]) {
 			map += '<li class="default-ward">' + ward_mapping[i] + '</li>';
 		}
 	}
@@ -77,7 +84,5 @@ function insert_custom_map(wards, element, default_color) {
 		$('.' + wards[group].class).css('color', wards[group].color);
 	}
 	
-	if (default_color) {
-		$('.default-ward').css('color', default_color);
-	}
+	$('.default-ward').css('color', default_color);
 }

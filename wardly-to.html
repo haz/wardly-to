@@ -5,8 +5,9 @@
   <title>Wardly | The simple map font</title>
   <meta name="description" content="Wardly | The simple map font">
   <meta name="author" content="Christian Muise">
-  <link rel="stylesheet" href="assets/css/screen.css?v=1.0">
+  
   <link rel="stylesheet" href="assets/css/wardly.css?v=1.0">
+  <link rel="stylesheet" href="assets/css/screen.css?v=1.0">
   
   <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script src="assets/js/wardly.js"></script>
@@ -19,10 +20,34 @@
                             '#st-pauls', 'grey');
     }
   </script>
+  
+  <style type="text/css">
+    #york {
+      color: #b0b0b0;
+    }
+
+    .york-ward {
+      color: #a3d07e;
+    }
+    
+    .wardly {
+      background: #f2f2f2;
+      padding: 20px;
+      border-radius: 10px;
+      border-top: 1px solid #dddddd;
+      height: 300px;
+      width: 600px;     /* width should be 2x the height */
+      font-size: 1200px; /* font-size should be 2x the width */
+    }
+    
+    h1 {
+      font-size: 2em;
+    }
+  </style>
 
 </head>
 <body onload="initialize()">
-	
+	<center>
 	<h1>Plain</h1>
 	<ul class="wardly" id="plain"> 
 	    <li>a</li>
@@ -70,6 +95,9 @@
 	    <li>Q</li>
 	    <li>R</li>
 	</ul>
+	
+	<br />
+	<br />
 	
 	<h1>York</h1>
 	<ul class="wardly" id="york"> 
@@ -119,9 +147,29 @@
 	    <li>R</li>
 	</ul>
 	
+	<br />
+	<br />
+	
+	<h1>Only York</h1>
+	<ul class="wardly" id="york">
+	    <li class="york-ward">g</li>
+	    <li class="york-ward">h</li>
+	    <li class="york-ward">i</li>
+	    <li class="york-ward">j</li>
+	    <li class="york-ward">k</li>
+	</ul>
+	
+	<br />
+	<br />
+	
 	<h1>St. Paul's</h1>
 	<ul class="wardly" id="st-pauls"> 
 	</ul>
+	
+	<br />
+	<br />
+	
+	</center>
 	
 </body>
 </html>

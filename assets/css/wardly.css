@@ -45,24 +45,3 @@
   user-select: none;
 }
 
-/************************
- * Style customizations *
- ************************/
-.wardly {
-  background: #f2f2f2;
-  padding: 20px;
-  border-radius: 10px;
-  border-top: 1px solid #dddddd;
-  height: 300px;
-  width: 600px;     /* width should be 2x the height */
-  font-size: 1200px; /* font-size should be 2x the widht */
-}
-
-#york {
-  color: #b0b0b0;
-}
-
-.york-ward {
-  color: #a3d07e;
-}
-
