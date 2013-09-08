@@ -40,17 +40,3 @@ abbr, acronym {
 }
 
 /*end reset*/
-body {
-  width: 300px;
-  margin: 0 auto;
-  font-family: "helvetica neue",arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  padding: 0 0 40px;
-}
-
-h1 {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 24px 0 6px;
-  color: #9d9d9d;
-}
