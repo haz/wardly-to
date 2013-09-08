@@ -8,7 +8,7 @@ Wardly-TO is a symbol font that makes is easy to create a map of the wards in th
     assets/font  - Folder containing the web-font files
     assets/css   - Folder containing compiled CSS files
     assets/js    - Folder containing compiled JS files
-    .html - Basic Demo
+    wardly-to.html - Basic Demo
     wardlyto.svg  - SVG font file
     wardlyto.ttf  - TrueType font file
     
